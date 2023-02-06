@@ -1,0 +1,11 @@
+    zn "%SYS"
+    // Allow SuperUser/SYS
+    Do ##class(Security.Users).UnExpireUserPasswords("*")
+
+    zn "USER"
+    // Load ObjectScript source files
+    zw $SYSTEM.OBJ.ImportDir("/opt/irisapp/server/src", "*.cls;*.xml", "cubk", .tErrors, 1)
+
+    // Use IPM to install a sample (see https://openexchange.intersystems.com/package/isc-codetidy)
+    zpm "install isc.codetidy"
+    h

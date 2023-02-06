@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  iris:
+    build:
+      context: ../
+      dockerfile : irisapp/Dockerfile
+      args:
+        - IRIS_PASSWORD=${IRIS_PASSWORD:-SYS}
+    entrypoint: sleep
+    command: infinity
+    volumes:
+      - ../:/irisdev/app/
+    environment:
+      - ISC_CPF_MERGE_FILE=/irisdev/app/irisapp/merge.cpf
