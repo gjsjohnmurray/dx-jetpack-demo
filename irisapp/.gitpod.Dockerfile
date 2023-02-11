@@ -14,9 +14,9 @@ RUN apt-get update && apt-get install -y \
 	git-lfs \
 	curl && \
 	/bin/echo -e gitpod\\tALL=\(ALL\)\\tNOPASSWD: ALL >> /etc/sudoers && \
-	sudo -u gitpod sudo echo enabled passwordless sudo-ing for gitpod && \
+	sudo -u gitpod sudo echo Enabled passwordless sudo-ing for gitpod && \
 	/bin/echo -e ${ISC_PACKAGE_MGRUSER}\\tALL=\(ALL\)\\tNOPASSWD: ALL >> /etc/sudoers && \
-	sudo -u ${ISC_PACKAGE_MGRUSER} sudo echo enabled passwordless sudo-ing for ${ISC_PACKAGE_MGRUSER}
+	sudo -u ${ISC_PACKAGE_MGRUSER} sudo echo Enabled passwordless sudo-ing for ${ISC_PACKAGE_MGRUSER}
 
 # create dev directory
 WORKDIR /opt/irisapp
