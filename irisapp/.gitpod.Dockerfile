@@ -22,6 +22,9 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /opt/irisapp
 RUN chown ${ISC_PACKAGE_MGRUSER}:${ISC_PACKAGE_IRISGROUP} /opt/irisapp
 
+# Line below is only to trigger rebuild from here onward
+USER root
+
 # switch user
 USER ${ISC_PACKAGE_MGRUSER}
 

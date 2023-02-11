@@ -1,7 +1,7 @@
 {
     "folders": [
         {
-            "path": "/workspace/dx-jetpack-demo"
+            "path": "./client"
         }
     ],
     "settings": {
