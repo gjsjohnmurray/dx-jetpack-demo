@@ -1,11 +1,6 @@
 image:
   file: irisapp/.gitpod.Dockerfile
 ports:
-  - name: IRIS webserver
-    description: Management Portal, Atelier API etc
-    port: 52773
-    visibility: private
-    onOpen: ignore
   - name: IRIS superserver
     description: Studio, Node Native API etc
     port: 1972
@@ -16,14 +11,20 @@ ports:
     port: 2188
     visibility: private
     onOpen: ignore
+  - name: IRIS webserver
+    description: Management Portal, Atelier API etc
+    port: 52773
+    visibility: private
+    onOpen: ignore
 tasks:
-- init: echo 'Running init task' && cd /tmp && sudo -u irisowner /iris-main -a '/opt/irisapp/afterStart-gitpod.sh || true'
-  command: echo 'Running command task' && cd /tmp && sudo -u irisowner /iris-main -a '/opt/irisapp/afterStart-gitpod.sh || true'
+- init: echo 'Running the init task' && cd /tmp && sudo -u irisowner /iris-main -a '/opt/irisapp/afterStart-gitpod.sh || true'
+  command: echo 'Running the command task' && cd /tmp && sudo -u irisowner /iris-main -a '/opt/irisapp/afterStart-gitpod.sh || true'
   name: IRIS console log
 vscode:
   extensions:
     - georgejames.intersystems-dxjetpack
     - intersystems-community.vscode-objectscript
-    - http://georgejames.com/files/intersystems-community.servermanager-3.2.1.vsix
-    - http://georgejames.com/files/intersystems.language-server-2.2.1@alpine-x64.vsix
+    - https://georgejames.com/files/intersystems-community.servermanager-3.2.1.vsix
+    - https://georgejames.com/files/intersystems.language-server-2.2.1@alpine-x64.vsix
+    - https://georgejames.com/files/intersystems.language-server-2.2.1@linux-x64.vsix
 workspaceLocation: /irisdev/app
