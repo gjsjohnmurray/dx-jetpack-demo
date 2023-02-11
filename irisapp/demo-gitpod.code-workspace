@@ -1,0 +1,41 @@
+{
+    "folders": [
+        {
+            "path": "/workspace/dx-jetpack-demo"
+        }
+    ],
+    "settings": {
+        "objectscript.conn" :{
+            "server": "devcontainer",
+            "ns": "USER",
+            "active": true
+        },
+        "objectscript.ignoreInstallLanguageServer": true,
+        "intersystems.servers": {
+            "devcontainer": {
+                "username": "SuperUser",
+                "password": "SYS",
+                "webServer": {
+                    "scheme": "http",
+                    "host": "127.0.0.1",
+                    "port": 52773
+                }
+            }
+        },
+        "terminal.integrated.profiles.linux": {
+            "bash": {
+                "path": "bash",
+                "icon": "terminal-bash"
+            },
+            "iris": {
+                "path": "iris",
+                "args": [
+                    "session",
+                    "iris"
+                ],
+                "overrideName": true
+            }
+        },
+        "terminal.integrated.defaultProfile.linux": "bash"
+    }
+}
