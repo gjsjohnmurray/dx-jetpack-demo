@@ -1,0 +1,12 @@
+image:
+  file: .gitpod.Dockerfile
+ports:
+  - port: 57772
+    name: IRIS webserver
+    visibility: private
+vscode:
+  extensions:
+    - georgejames.intersystems-dxjetpack
+    - intersystems-community.vscode-objectscript
+    - intersystems-community.servermanager
+workspaceLocation: /irisdev/app
