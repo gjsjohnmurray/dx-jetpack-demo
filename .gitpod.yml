@@ -25,5 +25,5 @@ vscode:
     - georgejames.intersystems-dxjetpack
     - intersystems-community.vscode-objectscript
     - https://georgejames.com/files/intersystems-community.servermanager-3.2.1.vsix
-    - https://georgejames.com/files/intersystems.language-server-2.2.1@alpine-x64.vsix
+    - https://georgejames.com/files/intersystems.language-server-2.2.1@linux-x64.vsix
 workspaceLocation: dx-jetpack-demo/irisapp/demo-gitpod.code-workspace
