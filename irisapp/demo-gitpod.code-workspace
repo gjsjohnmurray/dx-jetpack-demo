@@ -36,6 +36,8 @@
                 "overrideName": true
             }
         },
-        "terminal.integrated.defaultProfile.linux": "bash"
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "workbench.colorTheme": "InterSystems Default Dark",
+        "workbench.startupEditor": "none"
     }
 }
