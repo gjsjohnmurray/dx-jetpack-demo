@@ -1,0 +1,29 @@
+image:
+  file: irisapp/.gitpod.Dockerfile
+ports:
+  - name: IRIS superserver
+    description: Studio, Node Native API etc
+    port: 1972
+    visibility: private
+    onOpen: ignore
+  - name: ISCAgent
+    description: IRIS agent for mirroring management
+    port: 2188
+    visibility: private
+    onOpen: ignore
+  - name: IRIS webserver
+    description: Management Portal, Atelier API etc
+    port: 52773
+    visibility: private
+    onOpen: ignore
+tasks:
+- init: echo 'Running the init task' && cd /tmp && sudo -u irisowner /iris-main -a '/opt/irisapp/afterStart-gitpod.sh || true'
+  command: echo 'Running the command task' && cd /tmp && sudo -u irisowner /iris-main -a '/opt/irisapp/afterStart-gitpod.sh || true'
+  name: IRIS console log
+vscode:
+  extensions:
+    - georgejames.intersystems-dxjetpack
+    - intersystems-community.vscode-objectscript
+    - intersystems-community.servermanager
+    - intersystems.language-server
+workspaceLocation: dx-jetpack-demo/irisapp/demo-gitpod.code-workspace
