@@ -23,6 +23,7 @@ tasks:
 vscode:
   extensions:
     - georgejames.intersystems-dxjetpack
+    - georgejames.iris-package-manager
     - intersystems-community.vscode-objectscript
     - intersystems-community.servermanager
     - intersystems.language-server

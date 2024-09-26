@@ -49,14 +49,6 @@
 					"bash": {
 						"path": "bash",
 						"icon": "terminal-bash"
-					},
-					"iris": {
-						"path": "iris",
-						"args": [
-							"session",
-							"iris"
-						],
-						"overrideName": true
 					}
 				},
 				"terminal.integrated.defaultProfile.linux": "bash"
@@ -65,6 +57,7 @@
 			// Add the IDs of extensions we want installed when the container is created.
 			"extensions": [
 				"georgejames.intersystems-dxjetpack",
+				"georgejames.iris-package-manager",
 				"intersystems-community.servermanager"
 			]
 		}

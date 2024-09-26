@@ -26,14 +26,6 @@
             "bash": {
                 "path": "bash",
                 "icon": "terminal-bash"
-            },
-            "iris": {
-                "path": "iris",
-                "args": [
-                    "session",
-                    "iris"
-                ],
-                "overrideName": true
             }
         },
         "terminal.integrated.defaultProfile.linux": "bash",

@@ -10,6 +10,8 @@ The ServerDiff extension will ask for permission to reinstall itself in order to
 
 Once ServerDiff has reinstalled, check the ObjectScript panel on the status bar. It should show `devcontainer[USER]`, indicating a connection to the USER namespace of the InterSystems IRIS environment inside the container. If necessary, click on that panel and choose `Refresh Connection` from the quickpick that appears at the top of the window.
 
+**TODO update below here**
+
 From the Activity Bar use the ObjectScript Explorer or the Server Manager to explore the `pkg.isc.codetidy.*` classes that isc-codetidy added to the USER namespace. We suggest you focus on the three new extensions we created specifically for the contest:
 
 - [gj :: codeSpex](https://marketplace.visualstudio.com/items?itemName=georgejames.codespex)
@@ -44,12 +46,12 @@ As soon as you save the changes the updated class gets imported into the namespa
 
 Curated by [George James Software](https://georgejames.com), this extension pack boosts the developer experience (DX) for devs working on [InterSystems](https://developer.intersystems.com) platforms.
 
-We entered the DX Jetpack into the 2023 [InterSystems Developer Tools Contest](https://openexchange.intersystems.com/contest/30). If you like it please vote for it.
+We entered the DX Jetpack (2024 edition) and the InterSystems Package Manager extensions into the 2024 [InterSystems Developer Tools Contest](https://openexchange.intersystems.com/contest/38). If you like them please vote for them.
 
 See all our VS Code extensions in [Visual Studio Marketplace](https://marketplace.visualstudio.com/publishers/georgejames).
 
 ## About George James Software
 
-Known for our expertise in InterSystems technologies, George James Software has been providing innovative software solutions for over 35 years. We focus on activities that can help our customers with the support and maintenance of their systems and applications. Our activities include consulting, training, support, and developer tools - with the Serenji debugger and Deltanji source control being our flagship tools. These tools augment InterSystems' technology and can help customers with the maintainability and supportability of their applications over the long term. 
+Known for our expertise in InterSystems technologies, George James Software has been providing innovative software solutions for over 35 years. We focus on activities that can help our customers with the support and maintenance of their systems and applications. Our activities include consulting, training, support, and developer tools - with the Deltanji source control being our flagship tool. Our tools augment InterSystems' technology and can help customers with the maintainability and supportability of their applications over the long term. 
 
 To find out more, go to our website - [georgejames.com](https://georgejames.com) 
