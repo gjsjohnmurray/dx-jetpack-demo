@@ -38,11 +38,11 @@ Open an IPM tab for the %SYS namespace and observe that `zpm` is the only instal
 Here are some ideas, but feel free to go 'off-piste' and do whatever you like. The dev container can easily be rebuilt so you can start again.
 
 1. On the USER row of the Server Manager tree, click the icon representing a 4-folder workspace. A status bar message appears briefly to tell you that the Workspace Creator extension has added 4 folders to your workspace.
-2. Switch to VS Code's Explorer view and click on the Collapse All button at the rightmost end of the workspace header.
+2. Switch to VS Code's Explorer view and click on the `Collapse Folders in Explorer` button at the rightmost end of the workspace header.
 3. Expand each of the new folders in turn to see what they contain.
-4. Right-click on the `devcontainer:USER - Classes` folder. If a single-entry Paste menu appears press `Escape` to dismiss this artefact (apparently a VS Code bug).
+4. Right-click on the `devcontainer:USER - Classes` folder. If clipboard permission message of a single-entry Paste menu appears press `Escape` to dismiss this artefact (apparently a VS Code bug).
 5. In the VS Code context menu that appears, choose `Hide Mapped Items`. Observe that the CSPX, Ens, EnsLib and EnsPortal packages are no longer visible.
-6. On the context menu of the `devcontainer:USER - Routines` root, use the context menu to `Show Generated Items`. Observer the generated XXX.1.int routines appearing under pkg/isc/codetidy. These were generated from the corresponding classes under the previous root.
+6. On the context menu of the `devcontainer:USER - Routines` root, use the context menu to `Show Generated Items`. Observe the generated XXX.1.int routines appearing under pkg/isc/codetidy. These were generated from the corresponding classes under the previous root.
 7. Use the `Show System Items` on the same context menu of the Classes root to make the %-packages and their classes visible.
 
 > For [technical reasons](https://github.com/gjsjohnmurray/iris-rest-api-explorer/issues/1) the third new extension in DX Jetpack, [InterSystems REST API Explorer](https://marketplace.visualstudio.com/items?itemName=georgejames.iris-rest-api-explorer), is not currently able to work in the online demo environment. Please install Jetpack locally and evaluate it there.
